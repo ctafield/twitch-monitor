@@ -3,7 +3,7 @@ const router = express.Router();
 
 const { getToken, getUserByName, getStreamByUserId } = require('../api/twitchapi');
 
-const secrets = require('../secrets.json');
+const secrets = require('../secrets');
 
 /* GET users listing. */
 router.get('/user', async function (req, res, next) {

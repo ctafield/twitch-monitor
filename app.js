@@ -21,7 +21,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use('/', indexRouter);
 
 app.use('/api', streamInfoRouter, apiRouter);
-app.use('/image', streamInfoRouter, streamImageRouter);
+app.use('/image', streamInfoRouter, streamImageRouter, weatherImageRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

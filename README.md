@@ -14,6 +14,8 @@ Create a secrets.json in the root of the project with the following format:
         "secret": "**secret**"
     },
     "openWeather": {
-        "apiKey": "**apikey**"
+        "apiKey": "**apikey**",
+        "lat":"**latitude**",
+        "lon":"**longitude**"        
     }
 }
