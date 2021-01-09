@@ -1,16 +1,15 @@
 const express = require('express');
 const router = express.Router();
 
-const fs = require('fs')
 const { createCanvas, loadImage } = require('canvas')
 
 /* GET home page. */
 router.get('/user', async function (req, res, next) {
 
-    //  if (!req.stream) {         
-    //      next();
-    //      return;
-    // }
+    if (!req.stream) {
+        next();
+        return;
+    }
 
     const width = 400
     const height = 300
@@ -23,7 +22,7 @@ router.get('/user', async function (req, res, next) {
         imageUrl = 'assets/images/streaming.png';
         fill = '#000';
         verb = 'is';
-    } else {        
+    } else {
         imageUrl = 'assets/images/offline.png';
         fill = '#fff';
         verb = "is not";
