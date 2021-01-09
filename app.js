@@ -30,6 +30,7 @@ app.use(function(req, res, next) {
 
 console.log('registering fonts - start');
 registerFont('assets/fonts/Goldie Boxing.ttf', { family: 'Goldie Boxing' })
+registerFont('assets/fonts/whitrabt.ttf', { family: 'White Rabbit' })
 console.log('registering fonts - done');
 
 // error handler

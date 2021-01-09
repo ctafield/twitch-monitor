@@ -9,7 +9,8 @@ async function onecall(appid, lat, lon) {
             appid,
             lat,
             lon,
-            exclude: "minutely"
+            exclude: "minutely",
+            units: "metric"
         });
 
     const { body: data } = result;
